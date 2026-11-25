@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кошик — Чистоцвіт</title>
+  <meta name="description" content="Кошик інтернет-магазину Чистоцвіт. Кількість, підписка на регулярну доставку зі знижкою 15% та оформлення замовлення.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="logo" href="index.html">
+        <svg class="logo__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="#0C6E67"/>
+          <path d="M16 6.5c0 0-6.2 7.1-6.2 11.2a6.2 6.2 0 1 0 12.4 0C22.2 13.6 16 6.5 16 6.5z" fill="#E7F7F4"/>
+          <path d="M16 13.2c.2 2.4 1.7 3.6 3.4 3.9-1.5 1.8-4.6 1.6-5.6-.4-.7-1.5.2-3.2 2.2-3.5z" fill="#1AA399"/>
+        </svg>
+        Чистоцвіт
+      </a>
+      <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Головне меню">
+        <a href="index.html">Головна</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="quiz.html">Підібрати набір</a>
+        <a href="delivery.html">Доставка та оплата</a>
+        <a href="about.html">Про нас</a>
+      </nav>
+      <a class="header__cart" href="cart.html" aria-label="Кошик">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/>
+          <path d="M3 4h2l2.2 11h11.3l2-8H7"/>
+        </svg>
+        <span class="cart-badge" data-cart-badge>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Кошик</h1>
+        <p class="lead">Перевірте кількість, за бажання ввімкніть підписку зі знижкою 15% і залиште дані для доставки.</p>
+        <div class="empty" data-cart-empty hidden>
+          <p>Кошик поки що порожній.</p>
+          <p><a class="btn btn--primary" href="catalog.html">Перейти до каталогу</a></p>
+        </div>
+        <div class="success" data-cart-success hidden>
+          <h2>Дякуємо, замовлення прийнято!</h2>
+          <p>Дякуємо, <strong data-order-name></strong>. Сума до сплати: <strong data-order-sum></strong>.</p>
+          <p class="muted">Ми зв’яжемося з вами для підтвердження. Це навчальний сайт, реальна оплата не здійснюється, товар не відправляється.</p>
+          <p><a class="btn btn--primary" href="catalog.html">Повернутися до каталогу</a></p>
+        </div>
+        <div class="cart-layout" data-cart-layout>
+          <div class="cart-list" data-cart-list></div>
+          <div>
+            <div class="cart-summary" data-cart-summary></div>
+            <div class="checkout" data-checkout-wrap style="margin-top:16px">
+              <h2>Оформлення</h2>
+              <form class="form-grid" data-checkout novalidate>
+                <label>Ім’я та прізвище
+                  <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <label>Телефон
+                  <input type="tel" name="phone" autocomplete="tel" placeholder="+380" required>
+                </label>
+                <label>Місто
+                  <input type="text" name="city" autocomplete="address-level2" required>
+                </label>
+                <label>Доставка
+                  <select name="delivery" required>
+                    <option value="">Оберіть спосіб</option>
+                    <option value="np">Нова Пошта — відділення або поштомат</option>
+                    <option value="np-courier">Нова Пошта — кур’єр</option>
+                    <option value="ukr">Укрпошта</option>
+                    <option value="kyiv">Кур’єр по Києву</option>
+                  </select>
+                </label>
+                <label>Оплата
+                  <select name="payment" required>
+                    <option value="">Оберіть спосіб</option>
+                    <option value="cod">Оплата при отриманні</option>
+                    <option value="card">Оплата карткою</option>
+                  </select>
+                </label>
+                <label>Коментар (необов’язково)
+                  <textarea name="comment" rows="3" placeholder="Відділення, поверх, побажання щодо часу"></textarea>
+                </label>
+                <p class="form-error" data-form-error></p>
+                <button class="btn btn--primary" type="submit">Підтвердити замовлення</button>
+                <p class="notice">Це навчальний сайт. Після підтвердження ви побачите повідомлення подяки, оплата не списується.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <p class="logo" style="color:#fff;margin-bottom:10px">Чистоцвіт</p>
+          <p>Інтернет-магазин побутової хімії для дому. Лагідні формули, зрозумілі позначки безпеки та доставка по Україні.</p>
+        </div>
+        <div>
+          <h3>Покупцям</h3>
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="quiz.html">Підібрати набір</a></li>
+            <li><a href="delivery.html">Доставка та оплата</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Контакти</h3>
+          <p>Онлайн-магазин, доставка по всій Україні. Фізичної торгової точки немає.</p>
+          <p><a href="about.html">Написати нам через форму</a></p>
+        </div>
+      </div>
+      <div class="footer__legal">© 2026 Красуленко Вікторія, група ФЕМП-3-16. Сайт розроблено в навчальних цілях</div>
+    </div>
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart-page.js"></script>
+</body>
+</html>

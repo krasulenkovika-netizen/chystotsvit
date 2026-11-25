@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Про нас і контакти — Чистоцвіт</title>
+  <meta name="description" content="Про інтернет-магазин Чистоцвіт, цінності бренду та форма зворотного зв’язку. Навчальний проєкт КНТЕУ.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="logo" href="index.html">
+        <svg class="logo__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="#0C6E67"/>
+          <path d="M16 6.5c0 0-6.2 7.1-6.2 11.2a6.2 6.2 0 1 0 12.4 0C22.2 13.6 16 6.5 16 6.5z" fill="#E7F7F4"/>
+          <path d="M16 13.2c.2 2.4 1.7 3.6 3.4 3.9-1.5 1.8-4.6 1.6-5.6-.4-.7-1.5.2-3.2 2.2-3.5z" fill="#1AA399"/>
+        </svg>
+        Чистоцвіт
+      </a>
+      <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Головне меню">
+        <a href="index.html">Головна</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="quiz.html">Підібрати набір</a>
+        <a href="delivery.html">Доставка та оплата</a>
+        <a href="about.html">Про нас</a>
+      </nav>
+      <a class="header__cart" href="cart.html" aria-label="Кошик">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/>
+          <path d="M3 4h2l2.2 11h11.3l2-8H7"/>
+        </svg>
+        <span class="cart-badge" data-cart-badge>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Про нас</h1>
+        <div class="split" style="margin:24px 0 40px">
+          <article class="content-card">
+            <h2>Чистоцвіт</h2>
+            <p>Чистоцвіт — інтернет-магазин побутової хімії для дому. Ми збираємо в одному каталозі засоби для прання, миття посуду, прибирання оселі, ванної кімнати та еколінійку, щоб не доводилося шукати кожну пляшку в різних відділах супермаркету.</p>
+            <p>Три прості правила, на яких стоїть бренд:</p>
+            <ul>
+              <li style="list-style:disc;margin:0 0 8px 1.2em">чесні склади без зайвого маркетингового шуму;</li>
+              <li style="list-style:disc;margin:0 0 8px 1.2em">зрозумілі позначки: еко, гіпоалергенний, безпечно для дітей і тварин;</li>
+              <li style="list-style:disc;margin:0 0 8px 1.2em">зручність замовлення — квіз для наборів і підписка на витратні засоби.</li>
+            </ul>
+            <p>Сайт створено як навчальний проєкт студентки КНТЕУ, група ФЕМП-3-16. Товари, ціни та відгуки змодельовані для лабораторної роботи й не є комерційною пропозицією.</p>
+          </article>
+          <article class="content-card">
+            <h2>Написати нам</h2>
+            <p class="muted">Онлайн-магазин, доставка по Україні. Окремої торгової зали немає. Залиште повідомлення — на навчальному сайті ми покажемо підтвердження, лист не надсилається.</p>
+            <form class="form-grid" data-contact>
+              <label>Ім’я
+                <input type="text" name="name" required>
+              </label>
+              <label>Повідомлення
+                <textarea name="message" rows="5" required placeholder="Запитання про доставку, склад засобу чи підписку"></textarea>
+              </label>
+              <p class="form-error" data-form-error></p>
+              <button class="btn btn--primary" type="submit">Надіслати</button>
+            </form>
+            <div class="success" data-contact-ok hidden>
+              <h2>Дякуємо!</h2>
+              <p>Повідомлення прийнято в навчальному режимі. Реального листа ми не отримуємо.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <p class="logo" style="color:#fff;margin-bottom:10px">Чистоцвіт</p>
+          <p>Інтернет-магазин побутової хімії для дому. Лагідні формули, зрозумілі позначки безпеки та доставка по Україні.</p>
+        </div>
+        <div>
+          <h3>Покупцям</h3>
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="quiz.html">Підібрати набір</a></li>
+            <li><a href="delivery.html">Доставка та оплата</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Контакти</h3>
+          <p>Онлайн-магазин, доставка по всій Україні. Фізичної торгової точки немає.</p>
+          <p><a href="about.html">Написати нам через форму</a></p>
+        </div>
+      </div>
+      <div class="footer__legal">© 2026 Красуленко Вікторія, група ФЕМП-3-16. Сайт розроблено в навчальних цілях</div>
+    </div>
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

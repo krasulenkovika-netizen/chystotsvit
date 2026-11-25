@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Чистоцвіт — інтернет-магазин хімії для дому</title>
+  <meta name="description" content="Побутова хімія для прання, посуду, прибирання та ванної. Екозасоби, підбір набору та підписка на регулярну доставку зі знижкою 15%.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="logo" href="index.html">
+        <svg class="logo__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="#0C6E67"/>
+          <path d="M16 6.5c0 0-6.2 7.1-6.2 11.2a6.2 6.2 0 1 0 12.4 0C22.2 13.6 16 6.5 16 6.5z" fill="#E7F7F4"/>
+          <path d="M16 13.2c.2 2.4 1.7 3.6 3.4 3.9-1.5 1.8-4.6 1.6-5.6-.4-.7-1.5.2-3.2 2.2-3.5z" fill="#1AA399"/>
+        </svg>
+        Чистоцвіт
+      </a>
+      <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Головне меню">
+        <a href="index.html">Головна</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="quiz.html">Підібрати набір</a>
+        <a href="delivery.html">Доставка та оплата</a>
+        <a href="about.html">Про нас</a>
+      </nav>
+      <a class="header__cart" href="cart.html" aria-label="Кошик">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/>
+          <path d="M3 4h2l2.2 11h11.3l2-8H7"/>
+        </svg>
+        <span class="cart-badge" data-cart-badge>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero__grid">
+          <div>
+            <span class="eyebrow">Побутова хімія з турботою</span>
+            <h1>Охайний дім починається з правильних засобів</h1>
+            <p class="lead">Чистоцвіт — інтернет-магазин хімії для дому: прання, посуд, прибирання, ванна та екотовари. Зрозумілі позначки безпеки, готові набори та підписка, щоб запаси не закінчувалися раптово.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="catalog.html">До каталогу</a>
+              <a class="btn btn--ghost" href="quiz.html">Підібрати набір для прибирання</a>
+            </div>
+            <ul class="trust">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> 24 засоби в 6 категоріях</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Доставка Новою Поштою та Укрпоштою</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> −15% на регулярну доставку</li>
+            </ul>
+          </div>
+          
+        <div class="hero__art" aria-hidden="true">
+          <svg class="hero__bottles" viewBox="0 0 420 340" fill="none">
+            <ellipse cx="210" cy="312" rx="150" ry="16" fill="#0c6e67" opacity=".12"/>
+            <g transform="translate(40 70)">
+              <rect x="48" y="8" width="36" height="18" rx="4" fill="#0c6e67"/>
+              <rect x="56" y="26" width="20" height="14" fill="#147f76"/>
+              <path d="M28 48h76l10 196c0 12-10 20-22 20H40c-12 0-22-8-22-20L28 48z" fill="#5ec4b8"/>
+              <path d="M46 70c2 70 2 130 0 160" stroke="rgba(255,255,255,.45)" stroke-width="7" stroke-linecap="round"/>
+            </g>
+            <g transform="translate(150 30)">
+              <path d="M62 18h22l14-12" stroke="#0c6e67" stroke-width="5" stroke-linecap="round"/>
+              <rect x="54" y="14" width="30" height="16" rx="4" fill="#0c6e67"/>
+              <rect x="60" y="30" width="18" height="16" fill="#147f76"/>
+              <path d="M36 50h66c8 0 14 6 14 14v196c0 12-8 20-20 20H42c-12 0-20-8-20-20V64c0-8 6-14 14-14z" fill="#f0c07a"/>
+              <path d="M54 80c1 70 1 130 0 170" stroke="rgba(255,255,255,.4)" stroke-width="6" stroke-linecap="round"/>
+            </g>
+            <g transform="translate(270 90)">
+              <rect x="70" y="6" width="26" height="8" rx="3" fill="#0c6e67"/>
+              <rect x="56" y="14" width="14" height="20" rx="3" fill="#147f76"/>
+              <rect x="46" y="34" width="34" height="12" rx="3" fill="#0c6e67"/>
+              <path d="M24 52h80c6 0 10 5 10 12v176c0 12-8 18-20 18H34c-12 0-20-6-20-18V64c0-7 4-12 10-12z" fill="#8fce8f"/>
+              <path d="M44 78c1 60 1 110 0 148" stroke="rgba(255,255,255,.45)" stroke-width="7" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <h2>Категорії</h2>
+            <p>Оберіть те, що потрібно саме зараз, або зберіть повний набір.</p>
+          </div>
+        </div>
+        <div class="cats" data-home-cats></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:10px">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <h2>Популярні товари</h2>
+            <p>Засоби, які найчастіше додають до кошика.</p>
+          </div>
+          <a class="btn btn--ghost" href="catalog.html">Увесь каталог</a>
+        </div>
+        <div class="grid-products" data-popular></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:10px">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <h2>Чому Чистоцвіт</h2>
+            <p>Кілька зручностей, яких часто бракує у великих універсальних магазинах.</p>
+          </div>
+        </div>
+        <div class="adv">
+          <article class="adv-card">
+            <div class="adv-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-4 5.2-6 8.2-6 11a6 6 0 0 0 12 0c0-2.8-2-5.8-6-11z"/><path d="M9.5 14.5c.4 1.6 1.6 2.5 3 2.5"/></svg></div>
+            <h3>Еко- та гіпоалергенні позначки</h3>
+            <p>У каталозі можна одразу відфільтрувати екозасоби та гіпоалергенні формули — без довгого читання дрібного шрифту.</p>
+          </article>
+          <article class="adv-card">
+            <div class="adv-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3"/><circle cx="16" cy="16" r="3"/><path d="M9 12v7M16 5v8M5 9h8M12 16h7"/></svg></div>
+            <h3>Підбір набору за 4 кроки</h3>
+            <p>Короткий квіз враховує приміщення, дітей, тварин і бажану екологічність — і збирає готовий набір зі знижкою.</p>
+          </article>
+          <article class="adv-card">
+            <div class="adv-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 5V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1M8 11h8M8 15h5"/></svg></div>
+            <h3>Підписка зі знижкою 15%</h3>
+            <p>Гель, бальзам і таблетки можна отримувати кожні 2, 4 або 8 тижнів. Підписку вмикаєте й вимикаєте в кошику.</p>
+          </article>
+          <article class="adv-card">
+            <div class="adv-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10z"/><circle cx="12" cy="11" r="2.2"/></svg></div>
+            <h3>Значки безпеки</h3>
+            <p>На картках видно, які засоби позначені як безпечні для дітей і тварин. Це орієнтир, а не заміна інструкції на етикетці.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:10px">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <h2>Відгуки покупців</h2>
+            <p>Короткі враження про замовлення і сервіс. Імена типові, відгуки навчальні.</p>
+          </div>
+        </div>
+        <div class="reviews">
+          <article class="review">
+            <div class="stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg></div>
+            <p>«Зібрала набір для ванної через квіз за пару хвилин. Гель для унітаза густий, тримається під ободом, як і обіцяли.»</p>
+            <div class="review__who">Олена <span>Київ</span></div>
+          </article>
+          <article class="review">
+            <div class="stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg></div>
+            <p>«Беремо екогель і засіб для посуду по підписці щомісяця. Зручно, що знижка одразу видно в кошику, нічого не треба шукати в акціях.»</p>
+            <div class="review__who">Андрій <span>Львів</span></div>
+          </article>
+          <article class="review">
+            <div class="stars"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L10 14.3 4.9 17l1.3-5.6L1.8 7.6l5.8-.5L10 1.8z"/></svg></div>
+            <p>«Фільтр «для тварин» справді допоміг. Екоспрей без різкого запаху, кіт не чхає після прибирання. Доставка Новою Поштою наступного дня.»</p>
+            <div class="review__who">Марина <span>Дніпро</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="promo">
+          <div>
+            <h2>Свіжі запаси вчасно, без зайвих походів до магазину</h2>
+            <p>Залиште адресу, щоб дізнаватися про нові набори та нагадування щодо підписки. А регулярну доставку зі знижкою 15% можна ввімкнути просто в кошику.</p>
+          </div>
+          <div>
+            <form class="promo__form" data-news-form>
+              <input type="email" name="email" placeholder="Ваша електронна пошта" required autocomplete="email">
+              <button class="btn btn--accent" type="submit">Підписатися</button>
+            </form>
+            <p class="form-note" data-news-ok hidden></p>
+            <p class="form-note">Навчальний сайт: листів ми не надсилаємо, форма лише показує підтвердження.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <p class="logo" style="color:#fff;margin-bottom:10px">Чистоцвіт</p>
+          <p>Інтернет-магазин побутової хімії для дому. Лагідні формули, зрозумілі позначки безпеки та доставка по Україні.</p>
+        </div>
+        <div>
+          <h3>Покупцям</h3>
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="quiz.html">Підібрати набір</a></li>
+            <li><a href="delivery.html">Доставка та оплата</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Контакти</h3>
+          <p>Онлайн-магазин, доставка по всій Україні. Фізичної торгової точки немає.</p>
+          <p><a href="about.html">Написати нам через форму</a></p>
+        </div>
+      </div>
+      <div class="footer__legal">© 2026 Красуленко Вікторія, група ФЕМП-3-16. Сайт розроблено в навчальних цілях</div>
+    </div>
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

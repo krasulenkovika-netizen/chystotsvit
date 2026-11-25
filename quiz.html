@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Підібрати набір — Чистоцвіт</title>
+  <meta name="description" content="Короткий квіз допоможе зібрати набір для прибирання: кухня, ванна, вся оселя, еко- або дитячий варіант.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="logo" href="index.html">
+        <svg class="logo__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="#0C6E67"/>
+          <path d="M16 6.5c0 0-6.2 7.1-6.2 11.2a6.2 6.2 0 1 0 12.4 0C22.2 13.6 16 6.5 16 6.5z" fill="#E7F7F4"/>
+          <path d="M16 13.2c.2 2.4 1.7 3.6 3.4 3.9-1.5 1.8-4.6 1.6-5.6-.4-.7-1.5.2-3.2 2.2-3.5z" fill="#1AA399"/>
+        </svg>
+        Чистоцвіт
+      </a>
+      <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Головне меню">
+        <a href="index.html">Головна</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="quiz.html">Підібрати набір</a>
+        <a href="delivery.html">Доставка та оплата</a>
+        <a href="about.html">Про нас</a>
+      </nav>
+      <a class="header__cart" href="cart.html" aria-label="Кошик">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/>
+          <path d="M3 4h2l2.2 11h11.3l2-8H7"/>
+        </svg>
+        <span class="cart-badge" data-cart-badge>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Підібрати набір для прибирання</h1>
+        <p class="lead">Чотири короткі запитання — і ми запропонуємо готовий комплект зі знижкою. Відповіді нікуди не надсилаються, усе рахується у вашому браузері.</p>
+        <div class="quiz-shell" data-quiz>
+          <p class="muted" data-progress-label>Крок 1 з 4</p>
+          <div class="progress"><span data-progress></span></div>
+
+          <div data-step="1" class="quiz-step">
+            <h2>Які приміщення потрібно прибрати?</h2>
+            <p class="muted">Можна обрати кілька варіантів.</p>
+            <div class="choice-grid">
+              <button type="button" class="choice" data-group="rooms" data-choice="kitchen">Кухня <small>Посуд, жир, стільниці</small></button>
+              <button type="button" class="choice" data-group="rooms" data-choice="bath">Ванна та сантехніка <small>Наліт, унітаз, душова</small></button>
+              <button type="button" class="choice" data-group="rooms" data-choice="all">Вся квартира <small>Підлога, скло, щотижневе прибирання</small></button>
+              <button type="button" class="choice" data-group="rooms" data-choice="kids">Дитяча або спальня <small>М’які формули, текстиль</small></button>
+            </div>
+            <div class="quiz-nav">
+              <span></span>
+              <button type="button" class="btn btn--primary" data-next>Далі</button>
+            </div>
+          </div>
+
+          <div data-step="2" class="quiz-step" hidden>
+            <h2>Хто ще живе в оселі?</h2>
+            <p class="muted">Це допоможе відібрати гіпоалергенні засоби та позначки безпеки.</p>
+            <div class="choice-grid">
+              <button type="button" class="choice" data-group="family" data-choice="kids">Є діти <small>М’які формули без різкого запаху</small></button>
+              <button type="button" class="choice" data-group="family" data-choice="pets">Є тварини <small>Засоби з позначкою безпеки для тварин</small></button>
+              <button type="button" class="choice" data-group="family" data-choice="none">Лише дорослі, без тварин <small>Можна підібрати універсальний набір</small></button>
+            </div>
+            <div class="quiz-nav">
+              <button type="button" class="btn btn--ghost" data-back>Назад</button>
+              <button type="button" class="btn btn--primary" data-next>Далі</button>
+            </div>
+          </div>
+
+          <div data-step="3" class="quiz-step" hidden>
+            <h2>Що для вас важливіше?</h2>
+            <div class="choice-grid">
+              <button type="button" class="choice" data-group="priority" data-choice="eco">Максимальна екологічність <small>Рослинні формули, менше різкої хімії</small></button>
+              <button type="button" class="choice is-on" data-group="priority" data-choice="balance">Баланс <small>Ефективно і без зайвої агресії</small></button>
+              <button type="button" class="choice" data-group="priority" data-choice="power">Максимальна ефективність <small>Складні забруднення, жир, наліт</small></button>
+            </div>
+            <div class="quiz-nav">
+              <button type="button" class="btn btn--ghost" data-back>Назад</button>
+              <button type="button" class="btn btn--primary" data-next>Далі</button>
+            </div>
+          </div>
+
+          <div data-step="4" class="quiz-step" hidden>
+            <h2>Як часто закінчуються витратні засоби?</h2>
+            <p class="muted">Якщо потрібна регулярна доставка, одразу запропонуємо підписку зі знижкою 15%.</p>
+            <div class="choice-grid">
+              <button type="button" class="choice" data-group="frequency" data-choice="2">Що два тижні <small>Велика родина або часте прибирання</small></button>
+              <button type="button" class="choice is-on" data-group="frequency" data-choice="4">Щомісяця <small>Найнадійніший ритм для більшості</small></button>
+              <button type="button" class="choice" data-group="frequency" data-choice="8">Раз на два місяці <small>Запасних флаконів вистачає надовго</small></button>
+              <button type="button" class="choice" data-group="frequency" data-choice="0">Поки що без підписки <small>Купуватиму разово</small></button>
+            </div>
+            <div class="quiz-nav">
+              <button type="button" class="btn btn--ghost" data-back>Назад</button>
+              <button type="button" class="btn btn--primary" data-next>Показати набір</button>
+            </div>
+          </div>
+
+          <div data-step="5" class="quiz-step" hidden>
+            <div data-result></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <p class="logo" style="color:#fff;margin-bottom:10px">Чистоцвіт</p>
+          <p>Інтернет-магазин побутової хімії для дому. Лагідні формули, зрозумілі позначки безпеки та доставка по Україні.</p>
+        </div>
+        <div>
+          <h3>Покупцям</h3>
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="quiz.html">Підібрати набір</a></li>
+            <li><a href="delivery.html">Доставка та оплата</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Контакти</h3>
+          <p>Онлайн-магазин, доставка по всій Україні. Фізичної торгової точки немає.</p>
+          <p><a href="about.html">Написати нам через форму</a></p>
+        </div>
+      </div>
+      <div class="footer__legal">© 2026 Красуленко Вікторія, група ФЕМП-3-16. Сайт розроблено в навчальних цілях</div>
+    </div>
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
